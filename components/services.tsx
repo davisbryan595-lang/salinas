@@ -34,9 +34,9 @@ export default function Services() {
   return (
     <section id="services" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Our Services</h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: "#d4d9e0" }}>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">Our Services</h2>
+          <p className="text-base sm:text-lg max-w-2xl mx-auto" style={{ color: "#d4d9e0" }}>
             Complete solutions for all your yard cleaning, handyman, and junk removal needs
           </p>
         </div>
