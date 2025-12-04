@@ -32,16 +32,16 @@ export default function ServiceArea() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
           {cities.map((city, index) => (
             <div
               key={index}
-              className="rounded-xl p-4 text-center border hover:transition cursor-pointer"
+              className="rounded-xl p-3 sm:p-4 text-center border hover:transition cursor-pointer"
               style={{ backgroundColor: "#3a4451", borderColor: "#556170" }}
               onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#e8e8e8")}
               onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#556170")}
             >
-              <p className="text-white font-semibold">{city}</p>
+              <p className="text-white font-semibold text-sm sm:text-base">{city}</p>
             </div>
           ))}
         </div>
