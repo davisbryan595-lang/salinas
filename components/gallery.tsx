@@ -72,14 +72,14 @@ export default function Gallery() {
   return (
     <section id="gallery" className="py-24" style={{ backgroundColor: "#2d3642" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Our Work</h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: "#d4d9e0" }}>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">Our Work</h2>
+          <p className="text-base sm:text-lg max-w-2xl mx-auto" style={{ color: "#d4d9e0" }}>
             Browse our gallery of completed projects showcasing professional results
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {galleryImages.map((image, index) => (
             <div
               key={index}
@@ -118,7 +118,7 @@ export default function Gallery() {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.95)" }}
           onClick={() => setSelectedImage(null)}
         >
@@ -126,10 +126,10 @@ export default function Gallery() {
             <img src={selectedImage || "/placeholder.svg"} alt="Lightbox view" className="w-full h-auto rounded-lg" />
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 p-2 rounded-full hover:opacity-90 transition"
+              className="absolute top-2 sm:top-4 right-2 sm:right-4 p-2 rounded-full hover:opacity-90 transition"
               style={{ backgroundColor: "white", color: "#3a4451" }}
             >
-              <X size={24} />
+              <X size={20} className="sm:w-6 sm:h-6" />
             </button>
           </div>
         </div>

@@ -13,26 +13,26 @@ export default function WhyChoose() {
   return (
     <section id="why-choose" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Why Choose SALINAS?</h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: "#d4d9e0" }}>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">Why Choose SALINAS?</h2>
+          <p className="text-base sm:text-lg max-w-2xl mx-auto" style={{ color: "#d4d9e0" }}>
             Quality service you can trust, backed by years of experience
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="rounded-2xl p-8 border hover:transition"
+              className="rounded-2xl p-6 sm:p-8 border hover:transition"
               style={{ backgroundColor: "#2d3642", borderColor: "#556170" }}
               onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#e8e8e8")}
               onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#556170")}
             >
               <div className="mb-4" style={{ color: "#e8e8e8" }}>
-                <CheckCircle size={40} strokeWidth={1.5} />
+                <CheckCircle size={36} className="sm:w-10 sm:h-10" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">{reason.title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: "#d4d9e0" }}>
                 {reason.description}
               </p>

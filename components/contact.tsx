@@ -21,14 +21,14 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           <div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8">Get In Touch</h2>
-            <p className="text-lg mb-12" style={{ color: "#d4d9e0" }}>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 sm:mb-8">Get In Touch</h2>
+            <p className="text-base sm:text-lg mb-8 sm:mb-12" style={{ color: "#d4d9e0" }}>
               Ready to get your project started? Contact us today for a free quote and professional service.
             </p>
 
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               {[
                 { icon: Phone, label: "Phone", value: "505-619-3506", href: "tel:505-619-3506" },
                 {
@@ -65,8 +65,8 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: "#2d3642", borderColor: "#556170" }}>
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="rounded-2xl p-6 sm:p-8 border" style={{ backgroundColor: "#2d3642", borderColor: "#556170" }}>
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               {[
                 { name: "name", label: "Full Name", type: "text", placeholder: "Your name" },
                 { name: "phone", label: "Phone", type: "tel", placeholder: "Your phone number" },
