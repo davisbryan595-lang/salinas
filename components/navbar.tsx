@@ -55,12 +55,12 @@ export default function Navbar() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden pb-4 border-t" style={{ borderColor: "#556170" }}>
+          <div className="md:hidden pb-3 border-t" style={{ borderColor: "#556170" }}>
             {["services", "gallery", "why-choose", "contact"].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
-                className="block w-full text-left py-2 hover:text-white transition"
+                className="block w-full text-left py-2.5 sm:py-3 px-2 hover:text-white transition text-sm sm:text-base"
                 style={{ color: "#d4d9e0" }}
               >
                 {section === "why-choose" ? "Why Us" : section.charAt(0).toUpperCase() + section.slice(1)}
@@ -68,7 +68,7 @@ export default function Navbar() {
             ))}
             <a
               href="tel:505-619-3506"
-              className="block w-full text-white px-4 py-2 rounded-lg mt-4 text-center font-semibold"
+              className="block w-full text-white px-4 py-2 rounded-lg mt-3 text-center font-semibold text-sm sm:text-base"
               style={{ backgroundColor: "#e8e8e8", color: "#3a4451" }}
             >
               Call Now
