@@ -65,8 +65,8 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: "#2d3642", borderColor: "#556170" }}>
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="rounded-2xl p-6 sm:p-8 border" style={{ backgroundColor: "#2d3642", borderColor: "#556170" }}>
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               {[
                 { name: "name", label: "Full Name", type: "text", placeholder: "Your name" },
                 { name: "phone", label: "Phone", type: "tel", placeholder: "Your phone number" },
