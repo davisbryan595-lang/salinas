@@ -23,13 +23,6 @@ export default function Hero() {
           Yard Cleaning • Handyman • Junk Removal & Hauling
         </p>
 
-        <div
-          className="mb-12 inline-block text-white px-6 py-3 rounded-full font-semibold"
-          style={{ backgroundColor: "#e8e8e8", color: "#3a4451" }}
-        >
-          Serving All of Central New Mexico
-        </div>
-
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
