@@ -15,7 +15,7 @@ export default function ServiceArea() {
           </p>
         </div>
 
-        <div className="mb-12 relative rounded-2xl overflow-hidden border h-80" style={{ borderColor: "#556170" }}>
+        <div className="mb-12 relative rounded-2xl overflow-hidden border h-48 sm:h-64 md:h-80" style={{ borderColor: "#556170" }}>
           <div
             className="w-full h-full bg-cover bg-center"
             style={{ backgroundImage: "url(https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&q=80)" }}
