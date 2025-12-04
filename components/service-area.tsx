@@ -8,9 +8,9 @@ export default function ServiceArea() {
   return (
     <section className="py-24" style={{ backgroundColor: "#2d3642" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">Service Area</h2>
-          <p className="text-xl font-light" style={{ color: "#d4d9e0" }}>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">Service Area</h2>
+          <p className="text-base sm:text-lg md:text-xl font-light" style={{ color: "#d4d9e0" }}>
             From Los Lunas to Eldorado at Santa Fe – We Cover It All
           </p>
         </div>
