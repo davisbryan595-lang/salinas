@@ -24,15 +24,15 @@ export default function WhyChoose() {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="rounded-2xl p-8 border hover:transition"
+              className="rounded-2xl p-6 sm:p-8 border hover:transition"
               style={{ backgroundColor: "#2d3642", borderColor: "#556170" }}
               onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#e8e8e8")}
               onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#556170")}
             >
               <div className="mb-4" style={{ color: "#e8e8e8" }}>
-                <CheckCircle size={40} strokeWidth={1.5} />
+                <CheckCircle size={36} className="sm:w-10 sm:h-10" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{reason.title}</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">{reason.title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: "#d4d9e0" }}>
                 {reason.description}
               </p>
