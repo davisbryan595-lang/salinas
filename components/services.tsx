@@ -47,15 +47,15 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="group relative rounded-2xl p-8 hover:transition duration-300 transform hover:-translate-y-2 cursor-pointer border"
+                className="group relative rounded-2xl p-6 sm:p-8 hover:transition duration-300 transform hover:-translate-y-2 cursor-pointer border"
                 style={{ backgroundColor: "#2d3642", borderColor: "#556170" }}
                 onMouseEnter={(e) => (e.currentTarget.style.borderColor = "#e8e8e8")}
                 onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#556170")}
               >
                 <div className="mb-4 group-hover:scale-110 transition" style={{ color: "#e8e8e8" }}>
-                  <Icon size={40} />
+                  <Icon size={36} className="sm:w-10 sm:h-10" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3">{service.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#d4d9e0" }}>
                   {service.description}
                 </p>
