@@ -118,7 +118,7 @@ export default function Gallery() {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.95)" }}
           onClick={() => setSelectedImage(null)}
         >
@@ -126,10 +126,10 @@ export default function Gallery() {
             <img src={selectedImage || "/placeholder.svg"} alt="Lightbox view" className="w-full h-auto rounded-lg" />
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 p-2 rounded-full hover:opacity-90 transition"
+              className="absolute top-2 sm:top-4 right-2 sm:right-4 p-2 rounded-full hover:opacity-90 transition"
               style={{ backgroundColor: "white", color: "#3a4451" }}
             >
-              <X size={24} />
+              <X size={20} className="sm:w-6 sm:h-6" />
             </button>
           </div>
         </div>
