@@ -1,0 +1,168 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* SALINAS Luxury Color Palette - Matching Logo Aesthetic */
+  --background: #3a4451;
+  --foreground: #ffffff;
+  --card: #2d3642;
+  --card-foreground: #ffffff;
+  --popover: #3a4451;
+  --popover-foreground: #ffffff;
+  --primary: #e8e8e8;
+  --primary-foreground: #3a4451;
+  --secondary: #2d3642;
+  --secondary-foreground: #ffffff;
+  --muted: #7a8a99;
+  --muted-foreground: #d4d9e0;
+  --accent: #e8e8e8;
+  --accent-foreground: #3a4451;
+  --destructive: #e8e8e8;
+  --destructive-foreground: #3a4451;
+  --border: #556170;
+  --input: #2d3642;
+  --ring: #e8e8e8;
+  --chart-1: #e8e8e8;
+  --chart-2: #2d3642;
+  --chart-3: #7a8a99;
+  --chart-4: #9eadb8;
+  --chart-5: #c7d0da;
+  --radius: 0.625rem;
+  --sidebar: #3a4451;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #e8e8e8;
+  --sidebar-primary-foreground: #3a4451;
+  --sidebar-accent: #2d3642;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #556170;
+  --sidebar-ring: #e8e8e8;
+}
+
+.dark {
+  --background: #3a4451;
+  --foreground: #ffffff;
+  --card: #2d3642;
+  --card-foreground: #ffffff;
+  --popover: #3a4451;
+  --popover-foreground: #ffffff;
+  --primary: #e8e8e8;
+  --primary-foreground: #3a4451;
+  --secondary: #2d3642;
+  --secondary-foreground: #ffffff;
+  --muted: #7a8a99;
+  --muted-foreground: #d4d9e0;
+  --accent: #e8e8e8;
+  --accent-foreground: #3a4451;
+  --destructive: #e8e8e8;
+  --destructive-foreground: #3a4451;
+  --border: #556170;
+  --input: #2d3642;
+  --ring: #e8e8e8;
+  --chart-1: #e8e8e8;
+  --chart-2: #2d3642;
+  --chart-3: #7a8a99;
+  --chart-4: #9eadb8;
+  --chart-5: #c7d0da;
+  --sidebar: #3a4451;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #e8e8e8;
+  --sidebar-primary-foreground: #3a4451;
+  --sidebar-accent: #2d3642;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #556170;
+  --sidebar-ring: #e8e8e8;
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations for SALINAS */
+@keyframes float-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(232, 232, 232, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(232, 232, 232, 0.6);
+  }
+}
+
+@keyframes float-up {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-pulse {
+  animation: float-pulse 3s ease-in-out infinite;
+}
+
+.float-up {
+  animation: float-up 3s ease-in-out infinite;
+}
+
+.hero-glow {
+  background: radial-gradient(circle at center, rgba(232, 232, 232, 0.1) 0%, transparent 70%);
+}
+
+.lightbox-overlay {
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(5px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
