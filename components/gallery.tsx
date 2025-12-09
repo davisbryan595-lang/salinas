@@ -5,64 +5,49 @@ import { X } from "lucide-react"
 
 const galleryImages = [
   {
-    src: "https://images.pexels.com/photos/29192615/pexels-photo-29192615.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Yard cleaning with shovel and garbage bag",
-    category: "Yard Cleaning",
-  },
-  {
-    src: "https://images.pexels.com/photos/7641255/pexels-photo-7641255.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Handyman fixing light bulb with toolbox",
-    category: "Handyman",
-  },
-  {
-    src: "https://images.pexels.com/photos/7006131/pexels-photo-7006131.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Classic red truck junk removal vehicle",
-    category: "Junk Removal",
-  },
-  {
-    src: "https://images.pexels.com/photos/8580732/pexels-photo-8580732.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Organized boxes for home cleanout keep donate trash",
-    category: "Cleanout",
-  },
-  {
-    src: "https://images.pexels.com/photos/4162016/pexels-photo-4162016.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Lawn mower cutting green grass",
-    category: "Yard Cleaning",
-  },
-  {
-    src: "https://images.pexels.com/photos/6196240/pexels-photo-6196240.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Worker with cleaning equipment next to service van",
-    category: "Handyman",
-  },
-  {
-    src: "https://images.pexels.com/photos/8961300/pexels-photo-8961300.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Professional discussing home renovation",
-    category: "Cleanout",
-  },
-  {
-    src: "https://images.pexels.com/photos/30869138/pexels-photo-30869138.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Trash organization wooden letters",
-    category: "Junk Removal",
-  },
-  {
-    src: "https://images.pexels.com/photos/4487515/pexels-photo-4487515.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Professional team in service van with boxes",
+    src: "/salinasG/IMG-20251204-WA0072.jpg",
+    alt: "Project 1",
     category: "Services",
   },
   {
-    src: "https://images.pexels.com/photos/735319/pexels-photo-735319.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Interior renovation work by professional painter",
-    category: "Handyman",
+    src: "/salinasG/IMG-20251204-WA0073.jpg",
+    alt: "Project 2",
+    category: "Services",
   },
   {
-    src: "https://images.pexels.com/photos/5090640/pexels-photo-5090640.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Workshop storage organization",
-    category: "Yard Cleaning",
+    src: "/salinasG/IMG-20251204-WA0074.jpg",
+    alt: "Project 3",
+    category: "Services",
   },
   {
-    src: "https://images.pexels.com/photos/8961300/pexels-photo-8961300.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
-    alt: "Home renovation transformation project",
-    category: "Cleanout",
+    src: "/salinasG/IMG-20251204-WA0075.jpg",
+    alt: "Project 4",
+    category: "Services",
+  },
+  {
+    src: "/salinasG/IMG-20251204-WA0076.jpg",
+    alt: "Project 5",
+    category: "Services",
+  },
+  {
+    src: "/salinasG/IMG-20251204-WA0077.jpg",
+    alt: "Project 6",
+    category: "Services",
+  },
+  {
+    src: "/salinasG/IMG-20251204-WA0078.jpg",
+    alt: "Project 7",
+    category: "Services",
+  },
+  {
+    src: "/salinasG/IMG-20251204-WA0079.jpg",
+    alt: "Project 8",
+    category: "Services",
+  },
+  {
+    src: "/salinasG/IMG-20251204-WA0080.jpg",
+    alt: "Project 9",
+    category: "Services",
   },
 ]
 
